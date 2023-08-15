@@ -1,6 +1,6 @@
 # Tokplay (Backend)
 
-Tokplay (Backend) is a server of Tokopedia Play clone.
+Tokplay-clone-api (Backend) is a server for Tokopedia Play clone.
 
 ## Features
 
@@ -19,13 +19,13 @@ Additional:
 
 ## How to install & run project
 
-Initialize a Node.js project and generates a package.json file with default values.
+Initialize a Node.js project and generates a package.json file with default values. Type the following code in the terminal.
 
 ```bash
 npm init -y
 ```
 
-The `-y` flag automatically answers "yes" to all prompts during the initialization process, so you won't need to manually input any configuration options.
+The `-y` automatically answers "yes" to all requests during the initialization process, so you do not need to enter configuration options manually.
 
 Use `npm` to install packages needed
 
@@ -33,13 +33,7 @@ Use `npm` to install packages needed
 npm i express mongoose body-parser cors dotenv express nodemon
 ```
 
-To run the program, you have two command options:
-
-```bash
-nodemon .
-```
-
-or
+To run this program, follow these steps:
 
 ```bash
 npm start
@@ -48,19 +42,19 @@ npm start
 The second option required this command in package.json, inside the `scripts`:
 
 ```bash
-"start": "nodemon index.js"
+"start": "node index.js"
 ```
 
 ## Environment Variables
 
 ```bash
 DATABASE_URL=mongodb://127.0.0.1:27017/tokopedia_play
-PORT=7007
+PORT=3080
 ```
 
 ## How to run features
 
-The server should start running on the specified port (e.g., `localhost:7007`).
+The server should start running on the specified port (e.g., `localhost:3080`).
 
 ### Video object
 
@@ -109,7 +103,7 @@ Returns all videos from the database.
 
 Returns all products related to video clicked.
 
-- URL Params<br>http://localhost:7007/api/products/1
+- URL Params<br>http://localhost:3080/api/products/1
 - Data Params<br>none
 
 - Success response:<br>
@@ -141,7 +135,7 @@ Returns all products related to video clicked.
 
 Returns all comments related to video detail.
 
-- URL Params<br>http://localhost:7007/api/comments/1
+- URL Params<br>http://localhost:3080/api/comments/1
 - Data Params<br>none
 
 - Success response:<br>
@@ -160,7 +154,7 @@ Returns all comments related to video detail.
 
 Returns submit status.
 
-- URL Params<br>http://localhost:7007/api/upload-comment/1
+- URL Params<br>http://localhost:3080/api/upload-comment/1
 - Data Params<br>
 
 ```bash
@@ -191,7 +185,7 @@ Fail
 
 Returns video data that just created.
 
-- URL Params<br>http://localhost:7007/api/insert-video
+- URL Params<br>http://localhost:3080/api/insert-video
 - Data Params<br>
 
 ```bash
@@ -212,7 +206,7 @@ Returns video data that just created.
 ### GET /one-video/:videoID
 Returns a video data after a video be clicked in homepage.
 
-- URL Params<br>http://localhost:7007/api/one-video/1
+- URL Params<br>http://localhost:3080/api/one-video/1
 - Data Params<br>
 {
     "videoID":3
@@ -235,7 +229,7 @@ Returns a video data after a video be clicked in homepage.
 ### POST /insert-product
 Returns product data that just created.
 
-- URL Params<br>http://localhost:7007/api/insert-product
+- URL Params<br>http://localhost:3080/api/insert-product
 - Data Params<br>
 
 ```bash
