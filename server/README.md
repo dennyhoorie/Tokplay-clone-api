@@ -146,7 +146,7 @@ Returns all comments related to video detail.
 {
     "success": true,
     "data": <comment_object>,
-    "message": "Get comments success!"
+    "message": "get comment successfully!"
 }
 ```
 
@@ -159,7 +159,7 @@ Returns submit status.
 
 ```bash
 {
-    "username":"Selena",
+    "username":"dennyhoorie",
     "comment": "This product is cool. Any other colors available?"
 }
 ```
@@ -190,8 +190,8 @@ Returns video data that just created.
 
 ```bash
 {
-    "videoID":7,
-    "thumbnailUrl":"thumbnailUrl7"
+    "videoID":5,
+    "thumbnailUrl":"thumbnailUrl5"
 }
 ```
 
@@ -234,9 +234,9 @@ Returns product data that just created.
 
 ```bash
 {
-    "productID":3,
-    "productUrl": "productUrl3",
-    "title":"title3",
+    "productID":5,
+    "productUrl": "productUrl5",
+    "title":"title5",
     "price": 10000
 }
 ```
@@ -249,7 +249,7 @@ Returns product data that just created.
 {
     "success": true,
     "data": <video_object>,
-    "message": "Insert new product success!"
+    "message": "new product uploaded successfully!"
 }
 ```
 
@@ -294,8 +294,3 @@ Returns product data that just created.
       "timestamp": datetime
     }
 ]
-```
-
-## API Structure
-
-![Alt Text](./assets/API-structure.jpg)
